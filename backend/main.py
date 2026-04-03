@@ -18,12 +18,6 @@ ENV_PATH = BASE_DIR / ".env"
 
 load_dotenv(ENV_PATH)
 
-groq_api_key = os.getenv("GROQ_API_KEY")
-if not groq_api_key:
-    raise RuntimeError(f"GROQ_API_KEY is not set. Add it to {ENV_PATH}")
-
-client = Groq(api_key=groq_api_key)
-
 SYSTEM_PROMPT_TEMPLATE = """You are an internal HR policy chatbot for new employees.
 Answer in natural Korean only.
 Do not use Japanese, Chinese, or English unless the user explicitly asks for it.
@@ -63,6 +57,16 @@ ensure_docs_dir()
 app.mount("/docs", StaticFiles(directory=DOCS_DIR), name="docs")
 
 
+def get_groq_client() -> Groq:
+    groq_api_key = os.getenv("GROQ_API_KEY")
+    if not groq_api_key:
+        raise HTTPException(
+            status_code=500,
+            detail="GROQ_API_KEY is not set. Configure it in the Render environment or backend/.env.",
+        )
+    return Groq(api_key=groq_api_key)
+
+
 def sanitize_pdf_filename(filename: str) -> str:
     safe_name = os.path.basename((filename or "").strip())
     if not safe_name:
@@ -74,6 +78,7 @@ def sanitize_pdf_filename(filename: str) -> str:
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
+    client = get_groq_client()
     selected_document = sanitize_pdf_filename(request.document) if request.document else None
     full_context, context_by_file = search(request.message, source_filename=selected_document)
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
