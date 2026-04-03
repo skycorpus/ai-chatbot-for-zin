@@ -13,5 +13,14 @@ AI Chatbot for Zin
 [사용자 채팅 UI + 예상 질문 버튼]
 
 핵심 기술 스택
-역할기술이유언어PythonClaude SDK, LangChain 생태계백엔드FastAPI비동기, REST API벡터DBChromaDB로컬 구동, 설치 간단RAG 프레임워크LangChain문서 로딩~검색 파이프라인프론트React or Streamlit채팅 UI + 버튼 제안배포GitHub Actions + DockerCI/CD문서 파싱PyMuPDF, python-docxPDF/Word 지원
+| 역할        | 기술                      | 이유                                |
+| --------- | ----------------------- | --------------------------------- |
+| 언어        | Python                  | Claude SDK 및 LangChain 생태계 활용에 적합 |
+| 백엔드       | FastAPI                 | 비동기 처리 및 REST API 구축에 최적화         |
+| 벡터 DB     | ChromaDB                | 로컬 실행 가능, 설치 및 사용 간편              |
+| RAG 프레임워크 | LangChain               | 문서 로딩부터 검색까지 파이프라인 구성             |
+| 프론트엔드     | React / Streamlit       | 채팅 UI 및 빠른 프로토타이핑 지원              |
+| 배포        | Docker + GitHub Actions | 환경 일관성 및 CI/CD 자동화                |
+| 문서 파싱     | PyMuPDF, python-docx    | PDF 및 Word 문서 처리 지원               |
+
 <img width="718" height="396" alt="image" src="https://github.com/user-attachments/assets/7225b22f-f0a0-4104-819f-eeba99a6aceb" />
