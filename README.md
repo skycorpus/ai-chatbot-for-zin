@@ -23,4 +23,3 @@ AI Chatbot for Zin
 | 배포        | Docker + GitHub Actions | 환경 일관성 및 CI/CD 자동화                |
 | 문서 파싱     | PyMuPDF, python-docx    | PDF 및 Word 문서 처리 지원               |
 
-<img width="718" height="396" alt="image" src="https://github.com/user-attachments/assets/7225b22f-f0a0-4104-819f-eeba99a6aceb" />
