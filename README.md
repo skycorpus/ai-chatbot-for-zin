@@ -1,18 +1,18 @@
 # ai-chatbot-for-zin
 AI Chatbot for Zin
 
-아키텍처
+# 아키텍처
 [사내 규정 문서 (PDF/Word)]
-        ↓ 임베딩
-[Vector DB - ChromaDB or FAISS]
-        ↓ 검색
+        ↓ (임베딩)
+[Vector DB - ChromaDB / FAISS]
+        ↓ (검색)
 [Claude API] ←→ [FastAPI 백엔드]
         ↓
-[Streamlit or React 프론트]
+[Streamlit / React 프론트]
         ↓
 [사용자 채팅 UI + 예상 질문 버튼]
 
-핵심 기술 스택
+# 핵심 기술 스택
 | 역할        | 기술                      | 이유                                |
 | --------- | ----------------------- | --------------------------------- |
 | 언어        | Python                  | Claude SDK 및 LangChain 생태계 활용에 적합 |
