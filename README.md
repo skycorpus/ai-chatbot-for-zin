@@ -36,16 +36,16 @@ AI Chatbot for Zin
 # 화면 샘플
 
 ### 1. 메인 페이지
-<img src="https://github.com/user-attachments/assets/a4c9434f-ca5f-44ad-ba50-ed9b3b0cedb1" width="700"/>
+<img src="https://github.com/user-attachments/assets/a4c9434f-ca5f-44ad-ba50-ed9b3b0cedb1" width="1000"/>
 
 ### 2. 자주 묻는 질문
-<img src="https://github.com/user-attachments/assets/4694a259-1ee3-43cd-ab0a-db37723797ed" width="700"/>
+<img src="https://github.com/user-attachments/assets/4694a259-1ee3-43cd-ab0a-db37723797ed" width="1000"/>
 
 ### 3. 규정 문서 페이지
-<img src="https://github.com/user-attachments/assets/ee6e3508-9c10-4a41-b2e9-20cacc620a0a" width="700"/>
+<img src="https://github.com/user-attachments/assets/ee6e3508-9c10-4a41-b2e9-20cacc620a0a" width="1000"/>
 
 ### 4. 관리자 페이지
-<img src="https://github.com/user-attachments/assets/64f19525-27f2-4f82-9b66-b6ef450156d2" width="700"/>
+<img src="https://github.com/user-attachments/assets/64f19525-27f2-4f82-9b66-b6ef450156d2" width="1000"/>
 
 
 
