@@ -1,7 +1,7 @@
-chromadb
 fastapi
+uvicorn
 groq
-PyMuPDF
+pymupdf
 python-dotenv
 python-multipart
-uvicorn
+chromadb==0.4.24
