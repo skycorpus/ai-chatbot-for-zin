@@ -4,4 +4,5 @@ groq
 pymupdf
 python-dotenv
 python-multipart
+numpy<2
 chromadb==0.4.24
