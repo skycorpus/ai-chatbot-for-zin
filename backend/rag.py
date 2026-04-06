@@ -2,7 +2,6 @@ import os
 
 import chromadb
 import fitz
-from chromadb.errors import NotFoundError
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(BASE_DIR, "docs")
@@ -37,7 +36,8 @@ def init_vectordb():
     client = chromadb.PersistentClient(path=CHROMA_DIR)
     try:
         client.delete_collection("company_policy")
-    except NotFoundError:
+    except Exception:
+        # Chroma versions differ on the exception type raised for a missing collection.
         pass
 
     collection = client.get_or_create_collection(name="company_policy")
