@@ -33,6 +33,13 @@ AI Chatbot for Zin
 | 프론트엔드 | HTML, CSS, JavaScript |
 | API | 그록 https://console.groq.com/keys |
 
+## 배포
+### frontend : GitHub Pages
+https://skycorpus.github.io/ai-chatbot-for-zin/
+
+### backend : Render
+[https://skycorpus.github.io/ai-chatbot-for-zin/](https://ai-chatbot-for-zin.onrender.com)
+
 ## 설치
 
 ```bash
