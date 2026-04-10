@@ -27,10 +27,10 @@ AI Chatbot for Zin
 | 영역 | 기술 |
 | --- | --- |
 | 언어 | Python |
+| 프론트엔드 | HTML, CSS, JavaScript |
 | 백엔드 | FastAPI |
 | 벡터 DB | ChromaDB |
 | 문서 파싱 | PyMuPDF |
-| 프론트엔드 | HTML, CSS, JavaScript |
 | API | 그록 https://console.groq.com/keys |
 
 ## 배포
